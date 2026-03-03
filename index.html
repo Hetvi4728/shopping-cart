@@ -7,40 +7,50 @@
 <body>
 
     <!-- Navbar -->
-    <div class="navbar">
-        <div class="logo"><h1>Painting Store</h1></div>
+<div class="navbar">
+    
+    <div class="store-name">
+        <h1>Painting Store</h1>
+    </div>
 
-        <div class="search-box">
-            <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()">
-            <button onclick="searchProducts()">Search</button>
-        </div>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search products..." onkeyup="searchProducts()">
+        <button class="search-btn" onclick="searchProducts()">Search</button>
+    </div>
 
-        <div class="cart">
-           <a href="cart.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+    <div class="left-section">
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="Store Logo">
         </div>
     </div>
+
+        <a href="cart.html" class="cart-link">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </a>
+
+</div>
 
     <!-- Products -->
     <div class="products">
 
         <div class="card">
-            <a href="product.html?name=Eclipse Painting&price=700&img=images/Eclipse.jpeg&desc=This handmade golden eclipse painting captures the peaceful beauty of nature. A lone tree silhouette stands against a glowing orange sky, with the sun gently shining through the branches. The warm tones create a calming and dreamy atmosphere, perfect for home decor or gifting.You will receive this painting in a beautiful frame.&size=21 x 14.8 cm">
+            <a href="product.html?id=1">
                 <img src="images/Eclipse.jpeg">
             </a> 
             <h3>Eclipse Painting</h3>
-            <p>₹700</p>
+            <p>₹1000</p>
         </div>
 
-        <div class="card">
-            <a href="product.html?name=Galaxy Painting&price=1200&img=images/Galaxy.jpeg&desc=Dive into the infinite beauty of the universe with this hand-painted galaxy artwork. The glowing pink and purple core surrounded by deep blue space and scattered stars creates a mysterious and calming atmosphere. A shooting star adds a touch of magic, making this piece feel alive and full of wonder.This painting is perfect for: Bedroom decor,Study/workspace inspiration,Gift for space lovers,Aesthetic wall gallery etc.You will receive this painting in a beautiful frame.&size=21 x 14.8 cm">
-               <img src="images/Galaxy.jpeg">
-            </a>
-            <h3>Galaxy Painting</h3>
-            <p>₹1200</p>
-        </div>
+         <div class="card">
+               <a href="product.html?id=2">
+                    <img src="images/Galaxy.jpeg">
+                </a>
+                <h3>Galaxy Painting</h3>
+                <p>₹1200</p>
+            </div>
 
         <div class="card">
-            <a href="product.html?name=Lord Ganesha Painting&price=3000&img=images/Ganpati.jpeg&desc=This hand-painted artwork beautifully captures the serene and powerful presence of Lord Ganesha, the remover of obstacles and the symbol of wisdom and prosperity. The vibrant blue tones combined with warm earthy shades create a spiritual and calming aura.Intricate detailing in the crown, ornaments, and sacred inscriptions adds traditional charm and depth to the piece. This painting brings positivity, peace, and auspicious energy into any space.Perfect for:Home temple,Living room decor,Office space,Housewarming or festive gift.&size=14 x 18 inches">
+            <a href="product.html?id=3">
                 <img src="images/Ganpati.jpeg">
             </a>
             <h3>Lord Ganesha Painting</h3>
@@ -48,7 +58,7 @@
         </div>
 
         <div class="card">
-                <a href="product.html?name=Venus Painting&price=1000&img=images/Venus.jpeg&desc=A hand-painted cosmic artwork featuring a glowing pink planet surrounded by a star-filled night sky. The soft pink hues blend beautifully with the dark galaxy background, creating a mysterious yet calming vibe.This piece symbolizes imagination, dreams, and the beauty of the unknown universe. Perfect for anyone who loves space-themed aesthetic decor.Ideal for:Bedroom walls,Study desk decor,Space lovers,Unique handmade giftYou will receive this painting in a beautiful frame.&size=21 x 14.8 cm">
+                <a href="product.html?id=4">
                     <img src="images/Venus.jpeg">
                 </a>
             <h3>Venus Painting</h3>
@@ -56,7 +66,7 @@
         </div>
 
         <div class="card">
-                <a href="product.html?name=Moon Painting&price=1000&img=images/Moon.jpeg&desc=A hand-painted artwork capturing the serene beauty of the full moon shining in a star-filled night sky. The detailed texture of the moon creates a realistic and soothing effect, bringing calmness and quiet elegance to any space. This piece symbolizes peace, dreams, and silent strength — perfect for those who love minimal yet meaningful art. Perfect for: Bedroom decor, Study or workspace, Minimalist wall gallery.You will receive this painting in a beautiful frame.&size=21 x 14.8 cm">
+                <a href="product.html?id=5">
                     <img src="images/Moon.jpeg">
                 </a>
             <h3>Moon Painting</h3>
@@ -64,7 +74,7 @@
         </div>
 
         <div class="card">
-                <a href="product.html?name=Krishna Painting&price=1500&img=images/Krishna.jpeg&desc=This hand-painted artwork captures the innocence and charm of Bal Krishna playing his flute beside a gentle calf. The vibrant yellow background filled with “Shri Krishna” creates a divine and uplifting aura. The painting symbolizes love, devotion, purity, and joy. Perfect for bringing positivity and spiritual warmth into your home. Perfect for: Home temple, Kids’ room decor, Living room wall, Janmashtami special gift, Spiritual gifting.&size=12 x 12 inches">
+                <a href="product.html?id=6">
                     <img src="images/Krishna.jpeg">
                 </a>
             <h3>Krishna Painting</h3>
@@ -72,7 +82,7 @@
         </div>
 
         <div class="card">
-                <a href="product.html?name=Space Painting&price=1000&img=images/Space.jpeg&desc=A hand-painted cosmic landscape capturing a serene moon rising above a galaxy-like horizon, where stars shimmer endlessly. The soft blend of deep blues and whites creates a calm, almost magical atmosphere — like floating between reality and dreams. This artwork symbolizes balance, reflection, and infinite possibilities. A perfect piece for those who love space, silence, and soulful decor. Perfect for: Bedroom aesthetic decor, Study/work desk inspiration, Space & galaxy lovers, Unique handmade gift.You will receive this painting in a beautiful frame.&size=21 x 14.8 cm">
+                <a href="product.html?id=7">
                     <img src="images/Space.jpeg">
                 </a>
             <h3>Space Painting</h3>
@@ -80,7 +90,7 @@
         </div>
 
         <div class="card">
-                <a href="product.html?name=Diwali Painting&price=500&img=images/Diwali.jpeg&desc=Celebrate the joy and warmth of Diwali with this hand-painted festive artwork featuring beautifully detailed diyas glowing against a soft golden background. The elegant lettering and warm tones create a positive and cheerful aura. This artwork symbolizes light over darkness, hope, prosperity, and new beginnings — making it a perfect festive decor piece or meaningful gift. Perfect for: Diwali home decor, Festive gifting, Office decoration, Seasonal wall art, Customized festive orders. You will receive this painting in a beautiful frame.&size=21 x 14.8 cm">
+                <a href="product.html?id=8">
                     <img src="images/Diwali.jpeg">
                 </a>
             <h3>Diwali Painting</h3>
@@ -88,10 +98,42 @@
         </div>
 
         <div class="card">
-                <a href="product.html?name=Planets Painting&price=1000&img=images/Planets.jpeg&desc=A hand-painted cosmic artwork featuring multiple planets floating in a star-filled universe. The deep blue and black tones create a mysterious atmosphere, while the glowing highlights add depth and realism. This piece represents exploration, curiosity, and the endless possibilities of the universe. A perfect artwork for dreamers and space lovers. Perfect for: Bedroom or study decor, Space-themed room aesthetic, Creative workspace, Unique handmade gift.You will receive this painting in a beautiful frame.&size=21 x 14.8 cm">
+                <a href="product.html?id=9">
                     <img src="images/Planets.jpeg">
                 </a>
             <h3>Planets Painting</h3>
+            <p>₹1000</p>
+        </div>
+
+         <div class="card">
+                <a href="product.html?id=10">
+                    <img src="images/Butterfly.jpeg">
+                </a>
+            <h3>Butterfly Painting</h3>
+            <p>₹700</p>
+        </div>
+
+        <div class="card">
+                <a href="product.html?id=11">
+                    <img src="images/Holi.jpeg">
+                </a>
+            <h3>Holi Painting</h3>
+            <p>₹500</p>
+        </div>
+
+        <div class="card">
+                <a href="product.html?id=12">
+                    <img src="images/Starbucks.jpeg">
+                </a>
+            <h3>Starbucks Painting</h3>
+            <p>₹700</p>
+        </div>
+
+        <div class="card">
+                <a href="product.html?id=13">
+                    <img src="images/Stars.jpeg">
+                </a>
+            <h3>Stars Painting</h3>
             <p>₹1000</p>
         </div>
 
