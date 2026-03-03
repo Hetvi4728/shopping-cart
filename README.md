@@ -1,1 +1,1 @@
-# shopping-cart
+# Painting store
