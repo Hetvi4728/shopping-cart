@@ -4,46 +4,73 @@ body {
     background-color: #f2f2f2;
 }
 
+
 .navbar {
     background-color: #232f3e;
-    padding: 15px;
-    color: white;
+    padding: 0px 10px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.search-bar {
-    display: flex;
-    gap: 1000px;
+.store-name {
+    color: #e79211;
+    font-size: 20px;
+    font-weight: bold;
 }
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.425);
+}
+
+.cart-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.cart-link:hover {
+    color: #ff9900;
+}
+
 .search-box {
     display: flex;
-    height: 50px;
     align-items: center;
-    background: rgb(236, 230, 230);
-    border-radius: 10px;
-    overflow: hidden;
 }
 
 .search-box input {
-    padding: 8px;
+    padding: 8px 100px;
+    width: 300px;
     border: none;
+    border-radius: 4px 0 0 4px;
     outline: none;
-    width: 380px;
-    height: 10px;
 }
 
 .search-btn {
-    background-color: #febd69;
+    padding: 8px 20px;
+    background-color: #ff9900;
     border: none;
-    padding: 8px 12px;
+    color: white;
+    font-weight: bold;
     cursor: pointer;
-    font-size: 16px;
+    border-radius: 0 4px 4px 0;
+    transition: 0.3s;
 }
 
 .search-btn:hover {
-    background-color: #f3a847;
+    background-color: #e68a00;
 }
+
 .navbar a {
     color: white;
     text-decoration: none;
