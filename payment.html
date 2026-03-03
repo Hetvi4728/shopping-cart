@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="showOrderSummary()">
+
+<div class="navbar">
+    
+    <div class="store-name">
+        <h1>Painting Store</h1>
+    </div>
+
+    <div class="left-section">
+        <div class="logo">
+            <img src="images/logo.jpeg" alt="Store Logo">
+        </div>
+    </div>
+
+</div>
+<h2 style="padding:20px;">Checkout</h2>
+
+<div style="display:flex; gap:50px; padding:20px;">
+
+    <!-- Customer Form -->
+    <form onsubmit="placeOrder(event)" style="flex:1; max-width:400px;">
+
+        <input type="text" id="customerName" placeholder="Full Name" required><br><br>
+        <input type="tel" id="customerPhone" placeholder="Phone Number" required><br><br>
+        <input type="email" id="customerEmail" placeholder="Email" required><br><br>
+        <textarea id="customerAddress" placeholder="Full Address" required></textarea><br><br>
+        <select id="customerCity" required>
+            <option value="">Select City/Nearest city</option>
+            <option value="Ahmedabad">Ahmedabad</option>
+            <option value="Amreli">Amreli</option>
+            <option value="Anand">Anand</option>
+            <option value="Aravali">Aravali</option>
+            <option value="Banaskantha">Banaskantha</option>
+            <option value="Bharuch">Bharuch</option>
+            <option value="Bhavnagar">Bhavnagar</option>
+            <option value="Botad">Botad</option>
+            <option value="Chhota Udepur">Chhota Udepur</option>
+            <option value="Dahod">Dahod</option>
+            <option value="Dang">Dang</option>
+            <option value="Devbhoomi Dwarka">Devbhoomi Dwarka</option>
+            <option value="Gandhinagar">Gandhinagar</option>
+            <option value="Gir Somnath">Gir Somnath</option>
+            <option value="Jamnagar">Jamnagar</option>
+            <option value="Junagadh">Junagadh</option>
+            <option value="Kutch">Kutch</option>
+            <option value="Kheda">Kheda</option>
+            <option value="Mahisagar">Mahisagar</option>
+            <option value="Mehsana">Mehsana</option>
+            <option value="Morbi">Morbi</option>
+            <option value="Narmada">Narmada</option>
+            <option value="Navsari">Navsari</option>
+            <option value="Patan">Patan</option>
+            <option value="Porbandar">Porbandar</option>
+            <option value="Rajkot">Rajkot</option>
+            <option value="Sabarkantha">Sabarkantha</option>
+            <option value="Surat">Surat</option>
+            <option value="Surendranagar">Surendranagar</option>
+            <option value="Tapi">Tapi</option>
+            <option value="Vadodara">Vadodara</option>
+            <option value="Valsad">Valsad</option>
+         </select><br><br>
+
+         <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+        <script>
+          (function(){
+             emailjs.init("CLARx2FBx0_iJfzfq");
+         })();
+        </script>
+
+        <button type="submit" class="buy-btn">Place Order</button>
+
+    </form>
+
+    <!-- Order Summary -->
+    <div style="flex:1; background:white; padding:20px; border-radius:8px;">
+        <h3>Order Summary</h3>
+        <div id="order-summary"></div>
+        <h4>Total: ₹<span id="order-total"></span></h4>
+
+        <br>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
